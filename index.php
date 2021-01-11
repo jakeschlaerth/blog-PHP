@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<html>
+<?php require_once('config.php') ?>
 
-<head>
-    <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
-    rel="stylesheet">
-    <!-- Styling for public area -->
-    <link rel="stylesheet" href="static/css/public_styling.css">
-    <meta charset="UTF-8">
+<?php require_once('includes/head_section.php') ?>
     <title>Blog | Home </title>
 </head>
+
+
 
 <body>
     <!-- container - wraps whole page -->
     <div class="container">
         <!-- navbar -->
-        <div class="navbar">
-            <div class="logo_div">
-                <a href="index.php">
-                    <h1>Blog</h1>
-                </a>
-            </div>
-            <ul>
-                <li><a class="active" href="index.php">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </div>
-        <!-- // navbar -->
+        <?php include('includes/navbar.php') ?>
+
+        <!-- banner -->
+        <?php include('includes/banner.php') ?>
 
         <!-- Page content -->
         <div class="content">
@@ -40,13 +24,8 @@
         <!-- // Page content -->
 
         <!-- footer -->
-        <div class="footer">
-            <p>MyViewers &copy; <?php echo date('Y'); ?></p>
-        </div>
-        <!-- // footer -->
-
-    </div>
-    <!-- // container -->
+        <?php include('includes/footer.php') ?>
+    </div> <!-- // container -->
 </body>
 
 </html>
