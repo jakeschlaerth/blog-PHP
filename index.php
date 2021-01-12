@@ -1,5 +1,6 @@
 <?php require_once('config.php') ?>
 <?php require_once(ROOT_PATH . '/includes/public_functions.php') ?>
+<?php require_once(ROOT_PATH . '/includes/registration_login.php') ?>
 
 <!-- retrieve all posts from db -->
 <?php $posts = getPublishedPosts(); ?>
@@ -47,7 +48,3 @@
 
         <!-- footer -->
         <?php include('includes/footer.php') ?>
-    </div> <!-- // container -->
-</body>
-
-</html>
